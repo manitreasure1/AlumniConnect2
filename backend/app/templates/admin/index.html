@@ -1,0 +1,47 @@
+{% extends 'admin/master.html' %}
+
+{% block body %}
+<div class="container mt-4">
+    <div class="jumbotron bg-dark text-white shadow-lg">
+        <h1 class="display-5">Welcome to the Admin Dashboard</h1>
+        <p class="lead">Manage users, roles, courses, and more with ease.</p>
+        <hr class="my-4">
+        <p>Use the navigation menu to access different sections of the platform.</p>
+    </div>
+
+    <div class="row">
+       
+        <div class="col-md-4">
+            <div class="card text-white bg-primary mb-3 shadow">
+                <div class="card-header">Users</div>
+                <div class="card-body">
+                    <p class="card-text">Registered Users</p>
+                    <a href="/admin/users/" class="btn btn-light btn-sm">View</a>
+                </div>
+            </div>
+        </div>
+
+       
+        <div class="col-md-4">
+            <div class="card text-white bg-success mb-3 shadow">
+                <div class="card-header">Courses</div>
+                <div class="card-body">
+                    <p class="card-text">Available Courses</p>
+                    <a href="/admin/course/" class="btn btn-light btn-sm">View</a>
+                </div>
+            </div>
+        </div>
+
+       
+        <div class="col-md-4">
+            <div class="card text-white bg-info mb-3 shadow">
+                <div class="card-header">Houses</div>
+                <div class="card-body">
+                    <p class="card-text">Registered Houses</p>
+                    <a href="/admin/house/" class="btn btn-light btn-sm">View</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
